@@ -1,0 +1,70 @@
+.chat {
+  height: 100%;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__area {
+    position: relative;
+    overflow: hidden;
+    background: rgb(232, 232, 232);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    padding: 30px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__footer {
+    display: flex;
+    position: relative;
+    z-index: 100;
+
+    & input {
+      display: block;
+      height: 50px;
+      width: 100%;
+      padding: 0 20px;
+      border: none;
+      border-radius: 0;
+      background: #f1f1f1;
+      font-size: 14px;
+
+      &::placeholder {
+        font-size: 14px;
+        color: rgb(155, 155, 155);
+      }
+    }
+
+    & button {
+      background: #9ffd70;
+      font-size: 18px;
+      padding: 0 30px;
+      border: none;
+      color: #000;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      @include hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+}

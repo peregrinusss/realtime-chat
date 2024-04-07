@@ -1,0 +1,28 @@
+.login {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__inner {
+  }
+
+  &__google {
+    border: none;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 2px 2px 20px 1px #c4c4c4;
+    color: $bg-color;
+    padding: 15px 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.3s;
+
+    @include hover {
+      background: $bg-color;
+      color: #fff;
+    }
+  }
+}
