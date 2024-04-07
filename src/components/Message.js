@@ -34,7 +34,7 @@ const Message = ({ src, name, msg, uid, msgid, time }) => {
           color: uid === msgid ? "#5711ad" : "#51e1ce",
         }}>{name}</div>
         <span className="message__text" style={{color: uid === msgid ? "#000" : "#fff"}}>{msg}</span>
-        <span className="message__time">{dateTime}</span>
+        <span className="message__time">{date.toLocaleDateString()} {dateTime}</span>
       </div>
     </div>
   );

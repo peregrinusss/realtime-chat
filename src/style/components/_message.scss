@@ -31,9 +31,8 @@
     overflow: hidden;
     padding: 12px;
     backdrop-filter: blur(6px);
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-rows: auto auto;
+    display: flex;
+    flex-direction: column;
   }
 
   &__text {
@@ -51,11 +50,12 @@
     text-align: end;
     font-size: 10px;
     line-height: 140%;
-    margin-bottom: -2px;
+    margin-bottom: -8px;
+    margin-top: 6px;
     color: #8b8b8b;
     grid-column: 2;
     grid-row: span 2;
     align-self: flex-end;
-    margin-left: 10px;
+    margin-left: auto
   }
 }
